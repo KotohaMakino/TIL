@@ -35,15 +35,15 @@ lαβの各チャンネルは、l:明度、α：黄-青、β:赤-緑に対応し
 
 この時、減ずるのはターゲット画像の平均値であることに留意する。
 
-$$ l* = l - `<l>` $$
+$$ l* = l - \overline{l}$$
 
-$$ \alpha* = \alpha - <\alpha> $$
+$$ \alpha* = \alpha - \overline{\alpha} $$
 
-$$ \beta* = \beta - <\beta> $$
+$$ \beta* = \beta - \overline{\beta} $$
 
 (l,$\alpha$,$\beta$:各画素のlαβ値)
 
-($<l>$,$<\alpha>$,$<\beta>$:ターゲット画像の画像全体の各チャンネルの平均値)
+($\overline{l}$,$\overline{\alpha}$,$\overline{\beta}$:ターゲット画像の画像全体の各チャンネルの平均値)
 
 (l*,$\alpha^*$,$\beta^*$:手順1の計算結果)
 
@@ -61,11 +61,11 @@ $$ \beta' = \frac{\sigma_t^\beta}{\sigma_s^\beta} \beta^* $$
 
 この時、加えるのは参照画像の平均値であることに留意する。
 
-$$ l_{result} = l' + <l> $$
-$$ \alpha_{result} = \alpha' + <\alpha> $$
-$$ \beta_{result} = \beta' + <\beta> $$
+$$ l_{result} = l' + \overline{l} $$
+$$ \alpha_{result} = \alpha' + \overline{\alpha} $$
+$$ \beta_{result} = \beta' + \overline{\beta} $$
 
-($<l>$,$<\alpha>$,$<\beta>$:参照画像の画像全体の各チャンネルの平均値)
+($\overline{l}$,$\overline{\alpha}$,$\overline{\beta}$:参照画像の画像全体の各チャンネルの平均値)
 
 ## 結果概要
 
