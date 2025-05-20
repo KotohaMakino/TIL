@@ -35,7 +35,7 @@ lαβの各チャンネルは、l:明度、α：黄-青、β:赤-緑に対応し
 
 この時、減ずるのはターゲット画像の平均値であることに留意する。
 
-$$ l* = l - <l> $$
+$$ l* = l - `<l>` $$
 $$ \alpha* = \alpha - <\alpha> $$
 $$ \beta* = \beta - <\beta> $$
 
@@ -59,7 +59,7 @@ $$ \beta' = \frac{\sigma_t^\beta}{\sigma_s^\beta} \beta^* $$
 
 この時、加えるのは参照画像の平均値であることに留意する。
 
-$$ l_{result} = l' + <l> $$
+$$ l_{result} = l' + `<l>` $$
 $$ \alpha_{result} = \alpha' + <\alpha> $$
 $$ \beta_{result} = \beta' + <\beta> $$
 
