@@ -65,7 +65,7 @@ $$ l_{result} = l' + \overline{l} $$
 $$ \alpha_{result} = \alpha' + \overline{\alpha} $$
 $$ \beta_{result} = \beta' + \overline{\beta} $$
 
-($\overline{l}$,$\overline{\alpha}$,$\overline{\beta}$:参照画像の画像全体の各チャンネルの平均値)
+($`\overline{l}`$,$`\overline{\alpha}`$,$`\overline{\beta}`$:参照画像の画像全体の各チャンネルの平均値)
 
 ## 結果概要
 
