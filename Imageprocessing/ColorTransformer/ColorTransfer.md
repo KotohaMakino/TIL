@@ -41,11 +41,11 @@ $$ \alpha* = \alpha - \overline{\alpha} $$
 
 $$ \beta* = \beta - \overline{\beta} $$
 
-(l,$\alpha$,$\beta$:各画素のlαβ値)
+(l,$`\alpha`$,$`\beta`$:各画素のlαβ値)
 
-($\overline{l}$,$\overline{\alpha}$,$\overline{\beta}$:ターゲット画像の画像全体の各チャンネルの平均値)
+($`\overline{l}`$,$`\overline{\alpha}`$,$`\overline{\beta}`$:ターゲット画像の画像全体の各チャンネルの平均値)
 
-(l*,$\alpha^*$,$\beta^*$:手順1の計算結果)
+(l*,$`\alpha^*`$,$`\beta^*`$:手順1の計算結果)
 
 1. 標準偏差のスケールを合わせて各チャンネル値のばたつきを一致させる
 
@@ -55,7 +55,7 @@ $$ \alpha' = \frac{\sigma_t^\alpha}{\sigma_s^\alpha} \alpha^* $$
 
 $$ \beta' = \frac{\sigma_t^\beta}{\sigma_s^\beta} \beta^* $$
 
-(l',$\alpha'$,$\beta'$:手順2の計算結果)
+(l',$`\alpha'`$,$`\beta'`$:手順2の計算結果)
 
 1. 手順1の逆操作として、画像全体の各チャンネルの平均値を、ターゲット画像の各画素値から加える
 
